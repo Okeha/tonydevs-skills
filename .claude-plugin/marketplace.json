@@ -1,0 +1,13 @@
+{
+  "name": "tonydevs-skills",
+  "owner": {
+    "name": "tonydevs"
+  },
+  "plugins": [
+    {
+      "name": "saas-motion-design",
+      "source": "./saas-motion-design",
+      "description": "Motion-design product videos for SaaS, built on the product's real UI and theme."
+    }
+  ]
+}
