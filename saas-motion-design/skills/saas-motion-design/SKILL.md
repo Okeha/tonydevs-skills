@@ -148,6 +148,40 @@ Write the script as a table, one row per line:
 - **Respect the length** set in the brief. Trim lines before speeding up motion.
 - **No voice-over by default.** Without one, the script appears as on-screen captions only.
 
+### Sound like a person, not a model
+
+Every line must sound like something a real person would say out loud to a coworker. AI-sounding copy makes viewers tune out and makes the product feel generic. This is a hard rule, not a style preference.
+
+**Write like this:**
+
+- **Be concrete.** Use the product's real feature names, real numbers and the actual thing the user does ("Drag a task to Friday", not "Effortlessly manage your workflow").
+- **Name the specific pain** the audience feels, in their words ("Your standup ran 40 minutes again").
+- **Use contractions** and everyday words: "you'll", "it's", "doesn't".
+- **Prefer verbs to adjectives.** Show what the product does instead of describing how good it is.
+- **Short lines are fine** when they say something specific ("Meetings move over." works because the picture shows exactly that).
+
+**Never write these:**
+
+| Pattern | Examples |
+|---|---|
+| Contrast framing | "Not X, but Y", "It's not just X, it's Y", "Not X. Not Y. Z.", "X isn't the problem. Y is." |
+| Rhythm-of-three lists | "Faster, smarter, better", "Plan. Build. Ship." when the three words say nothing specific |
+| Stacked adjective fragments | "Simple. Powerful. Yours." |
+| Rhetorical openers | "What if…?", "Imagine a world where…", "Ever wondered…?", "We've all been there." |
+| Fake reveals | "Enter X.", "Meet X.", "The result?", "Here's the thing.", "The best part?", "Introducing…" as a beat on its own |
+| Before/after clichés | "Say goodbye to X and hello to Y", "X just got Y", "X, reimagined", "X, but better", "The future of X is here" |
+| Scene-setting filler | "In today's fast-paced world", "In an ever-changing landscape", "Now more than ever" |
+| Hype and buzzwords | seamless, effortless, revolutionize, game-changer, unlock, unleash, elevate, empower, supercharge, next-level, cutting-edge, robust, leverage, harness, streamline, transform, journey, landscape, realm, delve, "at scale", "like never before" |
+| Vague abstractions | "the future of work", "built for modern teams", "work the way you want" |
+| Punctuation tells | Em dashes for dramatic pauses, ellipses for suspense, colons that set up a reveal |
+
+**Before showing the script to the user, run a slop pass:**
+
+1. Read every line out loud (or as if out loud). If you wouldn't say it to a friend at lunch, rewrite it.
+2. Check every line against the table above and rewrite any match. Don't just swap in a synonym; change the sentence.
+3. For every adjective, ask "what does the viewer *see* that proves this?" Replace the adjective with that thing, or cut it.
+4. If a line could appear in any other product's video unchanged, it's too generic. Make it specific to this product.
+
 ### Structure template
 
 This is the default arc. Adapt it to the product and the brief.
@@ -349,6 +383,7 @@ Use a real track from [Mixkit](https://mixkit.co/free-stock-music/) instead of s
 - [ ] Nothing moves without a reason
 - [ ] Every number on screen is true and footnoted where needed
 - [ ] Length is within the limit set in the brief
+- [ ] No line uses a pattern from the **Sound like a person** table; every line could be said out loud by a real person
 - [ ] The music track has a `LICENSE.md` entry, and the film isn't going to TV, radio, CD, DVD or a game
 - [ ] Music ends on a phrase or fade, not a hard cut
 
