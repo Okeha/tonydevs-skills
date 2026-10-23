@@ -17,7 +17,7 @@ Make product films where the real product UI is the hero and every movement expl
 | Colors | Taken from the product's own UI theme | Never hard-code colors |
 | Gradients | **None** | The user explicitly asks for them |
 | Voice-over | **None** | The user explicitly asks for it |
-| Music | A [Mixkit](https://mixkit.co/free-stock-music/) track the user picks | Nothing fits, or the film will be broadcast (see **Audio**) |
+| Music | A **high-energy** [Mixkit](https://mixkit.co/free-stock-music/) track the user picks | The user wants a calmer mood, nothing fits, or the film will be broadcast (see **Audio**) |
 
 **One video per run.** Render a single aspect ratio. Never generate 16:9 and 9:16 together; a 9:16 cut is only made when the user asks for it.
 
@@ -306,12 +306,13 @@ Use a real track from [Mixkit](https://mixkit.co/free-stock-music/) instead of s
 
 **Find and choose a track:**
 
-1. **Match the mood to tags.** Turn the plan's tone into 2–3 Mixkit tags and open their pages at `https://mixkit.co/free-stock-music/tag/<tag>/`. Good starting tags for product films are `corporate`, `technology`, `intro`, `lifestyle`, `fashion` and `instrumental`.
-2. **Shortlist 3–5 tracks** from the tag pages. Each card shows the title, artist and duration, and the preview MP3 is at `https://assets.mixkit.co/music/<id>/<id>.mp3`. Skip tracks shorter than the film unless they loop cleanly, and skip vocals unless the user wants them.
+1. **Favour high energy by default.** Unless the user or the plan asks for something calmer, look for driving, upbeat tracks with a strong beat that push the film forward. Start from Mixkit's mood pages at `https://mixkit.co/free-stock-music/mood/<mood>/`, using `energetic`, `driving`, `upbeat`, `propulsive`, `dynamic`, `exciting`, `confident` or `euphoric`. Narrow down with tag pages at `https://mixkit.co/free-stock-music/tag/<tag>/`, such as `technology`, `corporate`, `motivational`, `intro`, `trailer` or `sports`. Use calmer moods (`calm`, `atmospheric`, `dreamy`) only when the brief asks for them.
+2. **Shortlist 3–5 tracks** from those pages. Each card shows the title, artist and duration, and the preview MP3 is at `https://assets.mixkit.co/music/<id>/<id>.mp3`. Skip tracks shorter than the film unless they loop cleanly, and skip vocals unless the user wants them.
 3. **Download the candidates** into the video project's `audio/music/candidates/` folder.
 4. **Analyse each one with FFmpeg:**
    - measure the loudness envelope (for example with `astats` per window) to find the build, the drop and any quiet passages
-   - estimate the tempo, so cuts can sit on the beat grid
+   - estimate the tempo, so cuts can sit on the beat grid; for the high-energy default, prefer roughly 115 BPM or faster, with a beat that comes in early and holds steady
+   - drop tracks with a long quiet intro or that stay low-energy for most of their length, unless the brief wants calm
    - find a phrase change for the brand reveal, a break for the logo, and a quiet spot for the "cut to empty frame" line
 5. **Present the shortlist** to the user: title, artist, Mixkit page link, duration, tempo, and one line on why it fits the plan. The user picks by ear; don't choose for them.
 6. **Record the licence.** Write `audio/music/LICENSE.md` in the video project with the track title, artist, Mixkit page URL, licence URL and download date. Delete the candidates that weren't chosen.
