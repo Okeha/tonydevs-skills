@@ -43,7 +43,7 @@ Make a 30-second 9:16 product video for Instagram, with a female voice-over
 Copy this repository's link and paste it into Claude Code with a request like:
 
 ```
-Install and use the saas-motion-design skill from https://github.com/<your-github-username>/tonydevs-skills
+Install and use the saas-motion-design skill from https://github.com/okeha/tonydevs-skills
 ```
 
 Claude will add the marketplace and install the plugin for you, or copy the skill into `~/.claude/skills/`. Then you can go straight to asking for a video. If it asks for permission to run commands, approve them.
