@@ -303,7 +303,6 @@ Keep the vocabulary small and reuse it:
 | Transition | When |
 |---|---|
 | Blur-out to blur-in | Default cut between scenes |
-| Cut to empty frame | The single most important line. The music drops out and the text lands in near-silence. |
 | Brand reveal | The logo mark appears, the wordmark draws in, the tagline settles |
 | Tone shift | The flat background tint shifts from a muted problem tone to the product's accent tone, from problem to answer (no gradient) |
 | Symbol still in | Opening: the logo mark fades in over 1.4 s |
@@ -347,7 +346,7 @@ Use a real track from [Mixkit](https://mixkit.co/free-stock-music/) instead of s
    - measure the loudness envelope (for example with `astats` per window) to find the build, the drop and any quiet passages
    - estimate the tempo, so cuts can sit on the beat grid; for the high-energy default, prefer roughly 115 BPM or faster, with a beat that comes in early and holds steady
    - drop tracks with a long quiet intro or that stay low-energy for most of their length, unless the brief wants calm
-   - find a phrase change for the brand reveal, a break for the logo, and a quiet spot for the "cut to empty frame" line
+   - find a phrase change for the brand reveal and a break for the logo
 5. **Present the shortlist** to the user: title, artist, Mixkit page link, duration, tempo, and one line on why it fits the plan. The user picks by ear; don't choose for them.
 6. **Record the licence.** Write `audio/music/LICENSE.md` in the video project with the track title, artist, Mixkit page URL, licence URL and download date. Delete the candidates that weren't chosen.
 
@@ -355,6 +354,7 @@ Use a real track from [Mixkit](https://mixkit.co/free-stock-music/) instead of s
 
 - Fit the film to the music, not the other way round. Trim, fade or loop at phrase boundaries; never time-stretch or pitch-shift the track.
 - Use the track's own sections: the hook over the intro, the product over the main groove, the logo on the final hit or break.
+- **Keep the music playing under every line**, including the most important one. Never drop it out for emphasis; let the picture and type carry the emphasis instead.
 - End with a clean fade or the track's own ending, never a hard cut mid-phrase.
 
 **Rules:**
